@@ -38,3 +38,16 @@ body {
   background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
+
+@keyframes ball-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+.animate-ball-bounce {
+  animation: ball-bounce 1s infinite;
+}
